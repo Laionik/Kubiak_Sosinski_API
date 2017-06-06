@@ -1,0 +1,58 @@
+﻿<div class="tableContainer">
+    <table>
+        <thead>
+            <tr  class="default">
+                <th width="15%">Zapytanie</th>
+                <th>Typ</th>
+                <th>Parametry</th>
+                <th>Zwrot</th>
+                <th>Przykład</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="notfirst">
+                <td>/api/eye/catalog?key={Twój klucz}</td>
+                <td>GET</td>
+                <td>null</td>
+                <td>Lista katalogów i ich status (JSON)</td>
+                <td><img src="~/Content/Examples/ex1.png" /></td>
+            </tr>
+            <tr class="notfirst">
+                <td>api/eye/photo/{id}?key={Twój klucz}</td>
+                <td>GET</td>
+                <td>id = id katalogu</td>
+                <td>Lista zdjęć z katalogu</td>
+                <td><img src="~/Content/Examples/ex2.png" /></td>
+            </tr>
+            <tr class="notfirst">
+                <td>/api/eye/save/{id}?key={Twój klucz}</td>
+                <td>POST</td>
+                <td>id = id katalogu</td>
+                <td>Wynik operacji</td>
+                <td><img src="~/Content/Examples/ex3.png" /></td>
+                @*<td>
+                    <strong>Przykład pliku json</strong><br />
+                        {<br />
+                        &emsp;"photo": [<br />
+                        &emsp;{<br />
+                        &emsp;&emsp;"dir": "12321",<br />
+                        &emsp;&emsp;"name": "adsadas",<br />
+                        &emsp;&emsp;"side": "l",<br />
+                        &emsp;&emsp;"phase": 3,<br />
+                        &emsp;&emsp;"histogram": [1, 2, 3, 4, 5],<br />
+                        &emsp;&emsp;"size": [123, 123]<br />
+                        &emsp;},<br />
+                        &emsp;{<br />
+                        &emsp;&emsp;"dir": "12321",<br />
+                        &emsp;&emsp;"name": "adsadas",<br />
+                        &emsp;&emsp;"side": "l",<br />
+                        &emsp;&emsp;"phase": 3,<br />
+                        &emsp;&emsp;"histogram": [1, 2, 3, 4, 5],<br />
+                        &emsp;&emsp;"size": [123, 123]<br />
+                        &emsp;}<br />
+                        ]}
+</td>*@
+            </tr>
+        </tbody>
+    </table>
+</div>

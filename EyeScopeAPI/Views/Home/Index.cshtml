@@ -1,0 +1,27 @@
+﻿<div class="jumbotron">
+    <h1>EyeScopeApi</h1>
+    <p class="lead">API do pobierania zdjęć oczu oraz zapisywania wyników analizy przez lekarza</p>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Jak skorzystać z API?</h2>
+        <p>{url}/api/eye?key={Twój klucz}</p>
+        <p>Na przykład <strong>http://eyescopeapi.azurewebsites.net/api/eye?key=twojKlucz</strong></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Lista zapytań</h2>
+        <p><a class="btn btn-default" href="@Url.Action("Requests","Home")">Sprawdź &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Klasa Photo - plik json</h2>
+        <p><code>public class Photo <br />
+    {<br />
+        public string dir { get; set; }<br />
+        public string name { get; set; }<br />
+        public string side { get; set; }  // l/r/u<br />
+        public int phase { get; set; } //0/1/2/3/4<br />
+        public int[] histogram { get; set; }<br />
+        public int[] size { get; set; }<br />
+    }</code></p>
+    </div>
+</div>
